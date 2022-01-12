@@ -25,4 +25,8 @@ ARG COMMIT=""
 ARG VERSION=""
 ARG BUILDNUM=""
 
+EXPOSE 40567/udp
+
+ENTRYPOINT ["geth"]
+
 LABEL commit="$COMMIT" version="$VERSION" buildnum="$BUILDNUM"
